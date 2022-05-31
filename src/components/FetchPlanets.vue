@@ -45,7 +45,7 @@
 						this.planets = res.data.results;
 						this.total = res.data.count / 2;
 						this.perPage = res.data.results.length;
-						console.log(res.data);
+						// console.log(res.data);
 					})
 					.catch((error) => {
 						console.log(error);
