@@ -16,7 +16,7 @@
 
 <script>
 	import "@ocrv/vue-tailwind-pagination/styles";
-	import VueTailwindPagination from "@/ocrv/vue-tailwind-pagination";
+	import VueTailwindPagination from "@ocrv/vue-tailwind-pagination";
 	import axios from "axios";
 	import PlanetCard from "./Planetcard.vue";
 	export default {
