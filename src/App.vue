@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<header>
+		<PageHead />
+	</header>
+	<FetchedPlanets />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+	import FetchedPlanets from "./components/FetchPlanets.vue";
+	import PageHead from "./components/PageHead.vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	export default {
+		name: "App",
+		components: {
+			PageHead,
+			FetchedPlanets,
+		},
+	};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+	#app {
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-align: center;
+		margin-top: 60px;
+		padding: 10px;
+	}
 </style>
