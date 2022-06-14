@@ -19,6 +19,7 @@
 	import VueTailwindPagination from "@ocrv/vue-tailwind-pagination";
 	import axios from "axios";
 	import PlanetCard from "./Planetcard.vue";
+	// import PageButtons from "./PageButtons.vue";
 	export default {
 		name: "FetchedPlanets",
 		components: {
@@ -31,9 +32,9 @@
 		},
 		data() {
 			return {
-				currentPage: 1,
-				total: 30,
-				perPage: 10,
+				currentPage: 0,
+				total: 0,
+				perPage: 0,
 				planets: [],
 			};
 		},
@@ -45,7 +46,7 @@
 						this.planets = res.data.results;
 						this.total = res.data.count / 2;
 						this.perPage = res.data.results.length;
-						// console.log(res.data);
+						console.log(res.data);
 					})
 					.catch((error) => {
 						console.log(error);
